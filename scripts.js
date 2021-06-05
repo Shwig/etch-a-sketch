@@ -1,16 +1,16 @@
 window.addEventListener("load", appInit, true); function appInit() {
 
     drawGrid();
-    doodle();
+    changePixelColor();
 
 };
 
-function doodle() {
+function changePixelColor() {
     const pixels = document.querySelectorAll('.sketch-pixel');
 
     pixels.forEach(pixel => {
-        pixel.addEventListener('mouseover', function (e) {
-            e.target.style.color = "orange";
+        pixel.addEventListener('mouseover', () => {
+            this.style.backgroundColor = "orange";
         });
     });
 }
