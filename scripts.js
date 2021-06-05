@@ -9,8 +9,8 @@ function changePixelColor() {
     const pixels = document.querySelectorAll('.sketch-pixel');
 
     pixels.forEach(pixel => {
-        pixel.addEventListener('mouseover', () => {
-            this.style.backgroundColor = "orange";
+        pixel.addEventListener('mouseover', (e) => {
+            e.target.style.backgroundColor = "orange";
         });
     });
 }
