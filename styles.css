@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0 auto;
+  }
+  
+  #sketch-container {
+    display: grid;
+    grid-template-columns: repeat(16, 1fr);
+    grid-template-rows: repeat(16, 1fr);
+    background-color: #ffffff;
+    justify-content: center;
+    align-content: center;
+    padding: 10%;
+    margin: auto;
+    height: 75%;
+    width: 75%;
+  }
+
+  .sketch-pixel {
+    /* background-color: rgba(255, 255, 255, 0.8); */
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    padding: 20px;
+  }
